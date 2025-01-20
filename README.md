@@ -1,0 +1,1 @@
+The Tourism Management Platform is a web application designed to improve the tourist experience in Uttarakhand. It is a user-centric platform, empowering visitors with the tools they need to explore the state with ease.
