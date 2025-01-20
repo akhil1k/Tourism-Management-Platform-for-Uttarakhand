@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand Tourism</title>
+</head>
+<body>
+    <h1>Welcome to Uttarakhand Tourism</h1>
+    <nav>
+        <a href="{{ url_for('register') }}">Register</a> |
+        <a href="{{ url_for('review') }}">Submit a Review</a> |
+        <a href="{{ url_for('complaint') }}">File a Complaint</a> |
+        <a href="{{ url_for('helplines') }}">Emergency Helplines</a>
+    </nav>
+
+    <h2>Recent Reviews</h2>
+    <!-- Display the latest reviews from the database -->
+    {% for review in reviews %}
+        <p>{{ review.place_name }} - Rating: {{ review.rating }}</p>
+        <p>{{ review.review_text }}</p>
+    {% endfor %}
+</body>
+</html>
